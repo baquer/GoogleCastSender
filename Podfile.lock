@@ -1,0 +1,23 @@
+PODS:
+  - google-cast-remote-display-sdk (2.10.4):
+    - google-cast-remote-display-sdk/Core (= 2.10.4)
+  - google-cast-remote-display-sdk/Core (2.10.4):
+    - google-cast-sdk (~> 2.10.4)
+  - google-cast-sdk (2.10.4.1):
+    - google-cast-sdk/Assets (= 2.10.4.1)
+    - google-cast-sdk/Core (= 2.10.4.1)
+  - google-cast-sdk/Assets (2.10.4.1):
+    - google-cast-sdk/Core
+  - google-cast-sdk/Core (2.10.4.1)
+
+DEPENDENCIES:
+  - google-cast-remote-display-sdk
+  - google-cast-sdk
+
+SPEC CHECKSUMS:
+  google-cast-remote-display-sdk: 019a252b2e15ae27e3b15780271a49c6235693bf
+  google-cast-sdk: 30f3b61691d833024c10c78811f6d96a831e754a
+
+PODFILE CHECKSUM: 2b446f3a8474b08a81b515d33115de3f04d9a7b8
+
+COCOAPODS: 1.4.0.rc.1
