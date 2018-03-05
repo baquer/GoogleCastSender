@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import GoogleCast
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, GCKLoggerDelegate {
+    func log(fromFunction function: UnsafePointer<Int8>!, message: String!) {
+        let functionName = String(cString:function)
+        print(functionName  +  message)
+    }
+    
+    
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GCKLogger.sharedInstance().delegate = self
         return true
     }
 
