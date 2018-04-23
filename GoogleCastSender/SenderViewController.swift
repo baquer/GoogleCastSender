@@ -46,6 +46,9 @@ GCKMediaControlChannelDelegate, UIActionSheetDelegate
         deviceScanner = GCKDeviceScanner(filterCriteria:filterCriteria)
         super.init(coder: aDecoder)!
     }
+    override func viewWillAppear(_ animated: Bool) {
+       // GCKCastContext.sharedInstance().presentcCastInstructionViewControllerOnce()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Hide The CastButton
@@ -57,6 +60,7 @@ GCKMediaControlChannelDelegate, UIActionSheetDelegate
         deviceScanner?.passiveScan = true
        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

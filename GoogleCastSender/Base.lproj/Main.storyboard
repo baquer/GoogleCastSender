@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Cast Button"/>
                                 <connections>
-                                    <action selector="castButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yca-no-ztS"/>
+                                    <action selector="castButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVR-sB-VSi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="castButton" destination="jxz-4E-kvI" id="p6B-sh-88v"/>
-                        <outlet property="castButtonPressed" destination="WJf-Dr-4QV" id="zeY-eu-GGV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

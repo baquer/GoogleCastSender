@@ -23,7 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GCKLoggerDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GCKLogger.sharedInstance().delegate = self
-        return true
+        GCKCastContext.sharedInstance()
+
+                return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
